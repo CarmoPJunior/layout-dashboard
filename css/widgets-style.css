@@ -253,6 +253,7 @@
   color: #fff;
 }
 
+/* Widget system-info */
 
 .widget-sytem-info h6 {
   color: rgba(244,244,245,.9);
@@ -361,5 +362,103 @@
 }
 
 
+/* card 2 */
 
+.card2{
+  position: relative;
+  background: rgba(0,0,0,.24);
+  background: var(--dark3);
+  padding: 20px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+  /* max-height: 125px; */
+}
+.card2 .card2-header{
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.25rem 0.25rem;
+}
+.card2 .card2-header .card2-header-icon {
+  font-size: 3.5em;
+  color: var(--black2);
+  color: #db2a34!important;
+  color:#2d8515!important;
+  color: #e49400!important;
+  display: flex;
+  align-items: center;
+}
+.card2 .card2-header .card2-header-detail {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+}
+.card2 .card2-header .card2-header-detail .card2-header-detail-title {
+  font-weight: bolder;
+  font-size: 1.9em;
+  color:var(--grey2);
+  color: #e49400!important;
+  color: #db2a34!important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.0;
+  padding: 0;
+}
+.card2 .card2-header .card2-header-detail .card2-header-detail-subtitle {
+  color: var(--black2);
+  color: white;
+  font-size: 0.7em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 1.0;
+  text-transform: uppercase;
+}
+.card2 .card2-body{
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem 0.25rem;
+  align-items: flex-start;
+}
+.card2 .card2-body .card2-body-value{
+  font-weight: bolder;
+  color:var(--grey2);
+  color: #e49400!important;
+  /* color:#2d8515!important; */
+  color: #db2a34!important;
+  font-size: 2.2em;
+  width: 100%;
+  white-space: nowrap;
+}
+.card2 .card2-body .card2-body-details{
+  color: var(--black2);
+  color: white;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
+.cardBox .card2:hover{
+  background: var(--dark3);
+}
+.cardBox .card2:hover .card2-body-details,
+.cardBox .card2:hover .card2-body-value,
+.cardBox .card2:hover .card2-header-detail-subtitle,
+.cardBox .card2:hover .card2-header-detail-title,
+.cardBox .card2:hover .card2-header-icon{
+  color: var(--white);
+}
